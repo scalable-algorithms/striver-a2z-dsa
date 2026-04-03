@@ -23,8 +23,8 @@ public class RotateArrayByKEitherLeftOrRight {
 
     private static int[] rotateRight(int[] arr, int k) {
         int n = arr.length;
-        arr = reverseArray(arr, 0, n - k - 1);
         arr = reverseArray(arr, n - k, n - 1);
+        arr = reverseArray(arr, 0, n - k - 1);
         arr = reverseArray(arr, 0, n - 1);
         return arr;
     }
