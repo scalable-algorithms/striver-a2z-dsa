@@ -41,13 +41,15 @@ public class UnionOfTwoSortedArrays {
         }
         while (i < n) {
             if (union.isEmpty() || union.get(union.size() - 1) != arr1[i]) {
-                union.add(arr1[i++]);
+                union.add(arr1[i]);
             }
+            i++;
         }
         while (j < n) {
             if (union.isEmpty() || union.get(union.size() - 1) != arr2[j]) {
-                union.add(arr2[j++]);
+                union.add(arr2[j]);
             }
+            j++;
         }
         return union;
     }
