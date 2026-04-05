@@ -5,12 +5,13 @@ public class CheckIfArrayIsSortedAndRotated {
     public static void main(String[] args) {
         // int[] nums = { 3, 4, 5, 1, 2 };
         // int[] nums = {1, 2, 3, 4, 5};
-        int[] nums = {2, 1, 3, 4};
+        int[] nums = { 2, 1, 3, 4 };
         boolean ans = check(nums);
+        System.out.println(ans);
     }
 
-    //solution 3
-     public static boolean check(int[] nums) {
+    // solution 3
+    public static boolean check(int[] nums) {
         // int[] nums = {3, ,4, 5, 1, 2};
         int violations = 0;
         for (int i = 1; i < nums.length; i++) {
