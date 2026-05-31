@@ -8,22 +8,28 @@ public class FindMissingElement {
         System.out.println(missingElement);
     }
 
-    
     // Solution 3 : using XOR operator
     private static int findMissingElement(int[] nums) {
-        int n = nums.length + 1;
-        int xorOne = 0;
-        int xorTwo = 0;
-        for (int i = 0; i < n - 1; i++) {
-            xorOne ^= nums[i];
-        }
+        // int n = nums.length + 1;
+        // int xorOne = 0;
+        // int xorTwo = 0;
+        // for (int i = 0; i < n - 1; i++) {
+        //     xorOne ^= nums[i];
+        // }
 
-        for (int i = 1; i <= n; i++) {
-            xorTwo ^= i;
+        // for (int i = 1; i <= n; i++) {
+        //     xorTwo ^= i;
+        // }
+        // return xorOne ^ xorTwo;
+
+        int n = nums.length;
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            ans ^= nums[i] ^ (i + 1);
         }
-        return xorOne ^ xorTwo;
+        ans ^= (n + 1);
+        return ans;
     }
-
 
     //solution 2 store frequency of every element 
     // if any number having frequency of 0 then return it
