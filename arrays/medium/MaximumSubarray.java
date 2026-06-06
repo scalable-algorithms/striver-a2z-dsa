@@ -1,4 +1,4 @@
-package arrays.medium;
+package striver_a2z_dsa.arrays.medium;
 
 public class MaximumSubarray {
 

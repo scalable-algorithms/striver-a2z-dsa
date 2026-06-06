@@ -1,1 +1,1 @@
-# striver-a2z-dsa
+# striver_a2z_dsa

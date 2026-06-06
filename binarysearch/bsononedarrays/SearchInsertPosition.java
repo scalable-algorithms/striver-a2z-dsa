@@ -1,4 +1,4 @@
-package binarysearch.easy;
+package striver_a2z_dsa.binarysearch.bsononedarrays;
 
 public class SearchInsertPosition {
 

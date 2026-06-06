@@ -1,4 +1,4 @@
-package binarysearch.easy;
+package striver_a2z_dsa.binarysearch.bsononedarrays;
 
 public class BinarySearch {
 
@@ -10,7 +10,7 @@ public class BinarySearch {
 
     /**
      * Binary Search Time Complexity: O(log N)
-     *
+     * <p>
      * Suppose array size = n
      *
      * After 1st iteration, remaining elements = n/2 After 2nd iteration,

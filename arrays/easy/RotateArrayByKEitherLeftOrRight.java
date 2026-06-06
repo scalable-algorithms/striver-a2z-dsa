@@ -1,4 +1,4 @@
-package arrays.easy;
+package striver_a2z_dsa.arrays.easy;
 
 import java.util.Arrays;
 
