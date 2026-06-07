@@ -1,10 +1,14 @@
 package striver_a2z_dsa.binarysearch.bsononedarrays;
 
+import java.util.Stack;
+
 public class BinarySearch {
 
     public static void main(String[] args) {
         int[] nums = {-1, 0, 3, 5, 9, 12};
         int target = 9;
+        Stack<Integer> st = new Stack<Integer>();
+        st.push(1);
         System.out.println(search(nums, target));
     }
 
