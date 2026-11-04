@@ -3,6 +3,7 @@ package striver_a2z_dsa.bitwise.basic;
 public class SetRightMostBit {
     public static void main(String[] args) {
         int n = 10;
+        System.out.println(setRightMostBitUnsetBit(n));
 
     }
 
